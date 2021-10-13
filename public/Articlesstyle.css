@@ -1,0 +1,94 @@
+*, *::after,::before{
+    box-sizing: border-box;
+    }
+    
+    body{
+        margin:0;
+        background-image : url("../images/beautiful-evening-purple-sunset-4k-vt.jpg");
+        background-size :cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .container h2{
+    font-size: 1.0em;
+    }
+    
+    .divcolor{
+        background:linear-gradient(to right , hsla(0 , 100% , 0%,0.7) , hsla(0 , 100% , 0%,0.5));
+    }
+    
+    .datediv{
+        color : white;
+        font-family: lighter;
+        margin-top: 10px;
+    }
+    .datediv::before{
+    content : 'Posted-On : ';
+    color : white;
+    }
+    
+    .articlename{
+        color : white;
+        font-size : 1.5em; 
+    }
+    
+    .articletitle{
+        color : white;
+        font-weight: bold;
+        font-size : 1.0em;
+    }
+    .articletitle::before{
+        content : 'Title : ';
+        color : white;
+    }
+    
+    .descriptiondiv{
+    padding-top : 3px; 
+    padding-bottom: 3px ;     
+    color : white;
+    font-weight: lighter;
+    background-color: hsla(1 , 10% , 80%,0.5);
+    border-radius: 8px;
+    word-wrap: break-word;
+    
+    }
+    
+    .descriptiondiv::before{
+        content : 'Description : ';
+        color : white;
+        font-weight: bold;
+        margin-left: 1%;
+    }
+    
+    .sanitizedHtmldiv{
+        margin-top: 1%;
+        background-color: hsla(1 , 10% , 80%,0.5);
+        padding: 0.25em 1.2em;
+        border-radius: 7px;
+        font-weight: bold;
+        word-wrap: break-word;
+    }
+
+    .navbardivcontainer{
+        width:100%;
+        height: 8%;
+        background-color: hsla(0,100%,0%,0.6);
+        margin-top : 0%;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        align-items: center;
+        position : absolute;
+        top : 0;
+      }
+      .navbardivcontainer div{
+        margin-left: 4%;
+      }
+      .navbar-link a{
+        color : white;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size : 1.3em;
+      }

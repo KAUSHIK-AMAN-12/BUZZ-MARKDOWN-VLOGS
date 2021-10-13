@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../public/Articlesstyle.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Show</title>
+  </head>
+  <body>
+    <div class="container-xxl">
+       
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: hsla(0 , 100% , 0% , 0.7);" >
+      <nav class="navbar navbar-light" style="margin-left:2%;">
+        <a class="navbar-brand" href="#" style=" color : white;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size : 1.3em;">Posts</a>
+      </nav>
+      <nav class="navbar navbar-light" style="margin-left:2%;">
+        <a class="navbar-brand" href="/user/profile" style=" color : white;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size : 1.3em;">UserProfile</a>
+      </nav>
+      <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="/user/logout" style=" color : white;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size : 1.3em;">Logout</a>
+      </nav>
+    </nav>
+
+
+      <h1 class="mb-2 ml-4 articlenameh1"><i class='fas fa-user-check' 
+        style='font-size:36px; color:white;'></i><%= article.name %></h1>
+      <h1 class="mb-2 ml-4 articletitle"><%= article.title %></h1>
+      <div class="text-muted mb-2 ml-4 articlePosted">
+        <%= article.createdAt.toLocaleDateString() %>
+      </div>
+      <a href="/index" class="btn btn-secondary ml-4">All Articles</a>
+      <a href="/articles/edit/<%= article.id %>" class="btn btn-info">Edit</a>
+      
+      <div class="ml-4 mt-2" style="color : white;">
+      <%- article.sanitizedHtml %>   <!--<%= article.markdown %>-->
+      </div>
+    </div>
+  </body>
+</html>

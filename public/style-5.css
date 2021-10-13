@@ -1,0 +1,208 @@
+/* by default --> body and html page have margins,we need to remove for fullscreen image */
+/* vw and vh includes scrollbar while "%" doesnot */
+/* backgorund-size is used to cover entire screen aspect ratio */
+/* hsl(a,b,c,d)--> hue-saturation-light, a is hue, b is saturation ,
+   c is lightness(more % means more light)  */
+/* hsla(a,b,c,d) --> here 'a' is an aplha channel means opacity */
+
+/* padding : 50px 40px ; --> here 50px is TOP-BOTTOM , 40px is LEFT-RIGHT */
+
+/* min-width is type of minimum width that any div cant squeeze beyond that point  */
+
+* {
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  html,
+  body {
+    margin: 0;
+  }
+  
+  .full-screen-container {
+    background-image: url("../images/beautiful-evening-purple-sunset-4k-vt.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* hsla(0, 15%, 45%, 0.6); */
+  .login-container {
+    background-color: #fed8b1;
+    padding: 0.2% 30px;
+    /* now adjust the width an height of this container  */
+    min-width: 600px;
+    width: 60%;
+    max-width: 800px;
+    box-shadow: 5px 5px 10px;
+    border-radius: 6px;
+    align-items: center;
+    position : absolute;
+    top: 9%;
+  }
+  /* justify content se hi div horizontal honge */
+  .input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;   
+    margin-bottom: 4px;
+  }
+  .input-container img{
+      height: 25%;
+      width : 25%;
+      border-radius: 50%;
+  }
+  
+  /* for heading  */
+  /* by default h3 element has margin and we dont want it */
+  
+  .login-title {
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding-top: 8px;
+    margin-bottom: 5px;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  /* FOR INPUT DIVS */
+  /* flex-direction : column --> show as stack on top of each other instead of side by side*/
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2px;
+    width: 100%;
+    justify-content:center ;
+    align-items: center;
+   
+  }
+  
+  /* FOR LABELS */
+  .input-group label {
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 1px;
+    text-align: center;
+  }
+  
+  .input-group div{
+    color : black;
+    font-size: 1.2em;
+  }
+  
+  /* add blue highlighter focus on the input on clicking */
+  .input-group input:focus {
+    border: 1px solid hsl(201, 100%, 50%);
+  }
+  
+  .input-group select{
+      background-color:hsla(201,100%,100%,0.1) ;
+      color : white;
+      width : 90%;
+      padding: 0.1em 0.25em;
+      font-size: 1.5em;
+      border: 1px solid hsl(201, 100%, 8%);
+      border-radius: 4px;
+      outline: none;
+      color: white;
+      font-weight: lighter;
+  }
+  
+  .input-group option{
+      background-color:black ;
+      color : white;
+      width : 90%;
+      padding: 0.1em 0.25em;
+      font-size: 1.0em;
+      border: 1px solid hsl(201, 100%, 8%);
+      border-radius: 4px;
+      outline: none;
+      color: white;
+      font-weight: lighter;
+  }
+  
+  /* FOR  LOGIN BUTTON */
+  .login-button {
+    /* padding for button size */
+    margin-left: 30%;
+    padding: 8px 10px;
+    width: 40%;
+    border-radius: 4px;
+    background-color: black;
+    /* background-color : hsla( 24 , 56% , 80% , 50%)    ; */
+    border: 3px solid hsla(24, 100%, 80%);
+    outline: none;
+    font-size: 1.2em;
+    color: white;
+    font-weight: lighter;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  /* NOw need to hover & focus style */
+  .logout-div:hover {
+    background-color: hsla(24, 100%, 50%, 0.8);
+  }
+  
+  
+  .solid{
+      border-radius: 1px solid white;
+  }
+
+  .logout-div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      width : 100%;
+      padding : 0.5em 1.25em;
+      background-color: hsl(201, 100%, 8%);
+      border-radius: 5px;
+
+  }
+.logout-div a{
+    color : red;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+
+}
+  
+.navbardiv{
+  width:100%;
+  height: 8%;
+  background-color: hsla(0,100%,0%,0.6);
+  margin-top : 0%;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: center;
+  position : absolute;
+  top : 0;
+}
+.navbardiv div{
+  margin-left: 4%;
+}
+.navbar-links a{
+  color : white;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size : 1.3em;
+}
+  
+
+
+  
+
+  

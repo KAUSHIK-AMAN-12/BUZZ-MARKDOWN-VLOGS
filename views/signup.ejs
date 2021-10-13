@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:100,300,500">
+  <link rel="stylesheet" href="../public/style-3.css">
+  <link rel="stylesheet" href="../public/tooltip-style.css">
+  <title>Signup Form</title>
+</head>
+
+<body>
+  <div class="full-screen-container">
+      
+    <div class="login-container">
+    <h3 class="login-title">Welcome to SignUP</h3>
+    <hr class="solid">
+      <form  action="/user/signup" method="POST">
+          <div class="input-container">
+        <div class="input-group">
+          <label>NAME : </label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="input-group">
+          <label>EMAIL : </label>
+          <input id="email" name="email" type="email" required>
+        </div>
+    </div>
+
+    <div class="input-container">
+        <div class="input-group">
+          <label>AGE : </label>
+          <input id="age" name="age" type="number" required>
+        </div>
+        <div class="input-group">
+          <label>GitHub-Link : </label>
+          <input id="githublink" name="githublink" type="text" required>
+        </div>
+    </div>
+
+    <div class="input-container">
+        <div class="input-group">
+          <label> Profession : </label>
+      <select name="profession" id="profession">
+          <option value="student">Student</option>
+          <option value="employed">Employed</option>
+          <option value="graduated">Graduated</option>
+          <option value="intern">Intern</option>
+        </select>
+        </div>
+        <div class="input-group">
+          <label>Education : </label>
+          <input id="education" name="education" type="text" required>
+        </div>
+    </div>
+    <div class="input-container">
+        <div class="input-group">
+          <label>Achievements : </label>
+          <input id="achievements" name="achievements" type="text" required>
+        </div>
+        <div class="input-group">
+          <label>linkedIn : </label>
+          <input id="linkedIn" type="text" name="linkedIn" required>
+        </div>
+    </div>
+    <div class="input-container" >
+        <div class="input-group">
+          <label>Password : </label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="input-group">
+        <div id="reasons" class="reasons">"Your password must have 1 Special character,1 Lowercase ,1 Uppercase Char,Integers"</div>
+        </div>
+        </div>
+      
+        <button type="submit" data-tooltip-signup="click to register yourself" 
+        class="login-button signup">Sign In</button>
+
+      </form>
+ 
+      <div class="loginpage-link"><a  href="/login">Already have an account? Log-In here</a></div>
+      <div class="link-tags">
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+

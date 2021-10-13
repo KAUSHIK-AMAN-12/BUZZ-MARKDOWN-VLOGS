@@ -1,0 +1,105 @@
+
+
+
+<!---------   New Profile         ------------->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:100,300,500">
+  <link rel="stylesheet" href="../public/style-5.css">
+ 
+  <title>Signup Form</title>
+</head>
+
+<body>
+  <div class="full-screen-container">
+    <div class="navbardiv">
+      <div class="navbar-links">
+        <a href="/articles/index">Vlogs</a>
+      </div>
+      <div class="navbar-links"  >
+        <a href="/user/profile">User-Profile</a>
+      </div>
+      <div class="navbar-links">
+        <a href="/user/logout">logout</a>
+      </div>
+      
+    </div>
+
+    <div class="login-container">
+    <h3 class="login-title">
+       User-Profile
+    </h3>
+    <hr style="margin-bottom: 10px; color : black; border: 0.5px solid black; ">
+         <div class="input-container">
+           <div class="input-group">
+             <img src="../images/MaleThumbnail.png">
+             </div>
+             <div class="input-group">
+             <a href="/user/profilepage/editprofile" style="text-decoration: none; color : red;
+             font-weight: bolder; font-size: 1.5em;">Edit Profile</a>
+             </div>
+         </div>
+          <div class="input-container">
+        <div class="input-group">
+          <label>NAME : </label>
+          <hr style="width:100%; color: black; border : 0.5px solid black; width : 70%; ">
+          <div><%= user.name %></div>
+        </div>
+        <div class="input-group">
+          <label>EMAIL : </label>
+          <hr style="width:100%; color: black; border : 0.5px solid black; width : 70%;">
+          <div><%= user.email %></div>
+        </div>
+    </div>
+
+    <div class="input-container">
+        <div class="input-group">
+          <label>AGE : </label>
+          <hr style="width:100%; color: black; border : 0.5px solid black; width : 70%;">
+        <div><%= user.age %></div>
+        </div>
+        <div class="input-group">
+          <label>GitHub-Link : </label>
+          <hr style="width:100%; color: black; border : 0.5px solid black; width : 70%;">
+          <div><%= user.githublink %></div>
+        </div>
+    </div>
+
+    <div class="input-container">
+        <div class="input-group">
+          <label> Profession : </label>
+          <hr style="width:100%; color: black; border : 0.5px solid black; width : 70%;">
+          <div><%= user.profession %></div>
+        </div>
+        <div class="input-group">
+          <label>Education : </label>
+          <hr style="width:100%; color: black; border : 0.5px solid black; width : 70%;">
+          <div><%= user.education %></div>
+        </div>
+    </div>
+    <div class="input-container">
+      <div class="input-group">
+        <label> Achievements : </label>
+        <hr style="width:100%; color: black; border : 0.5px solid black; width : 70%;">
+        <div><%= user.achievements %></div>
+      </div>
+      <div class="input-group">
+        <label>linkedIn : </label>
+        <hr style="width:100%; color: black; border : 0.5px solid black; width : 70%;">
+        <div><%= user.linkedIn %></div>
+      </div>
+
+  </div>
+   <div class="logout-div">
+       
+       <a href="/user/logout">Log-Out</a>
+   </div>
+  
+  </div>
+  </div>
+</body>
+
+</html>
+

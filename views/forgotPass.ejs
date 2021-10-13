@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../public/style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:100,300,500">
+  <link rel="stylesheet" href="../public/tooltip-style.css">
+  <title>Forgot Password ?</title>
+</head>
+
+<body>
+
+  <div class="full-screen-container">
+    <div class="search-container-forgotPass">
+    <h3 class="login-title">Forgot Password Page</h3>
+    <hr class="solid">
+      <form action="/user/searchemail" method="POST">
+
+        <div class="input-group">
+          <label>Email : </label>
+          <input id="email" type="email" name="email" required>
+        </div>
+        <% if(locals.err_msg) { %>
+          <div class="input-group errormessage"><%= err_msg %></div>
+          <% } %>         
+
+        <button type="submit" data-tooltip-searchbutton="Click here to find your registered email"
+         class="search-button">Search Email</button>
+      </form>
+    </div>
+    
+  </div>
+</body>
+
+</html>

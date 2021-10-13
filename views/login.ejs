@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../public/style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:100,300,500">
+  <link rel="stylesheet" href="../public/tooltip-style.css">
+  <title>Login Page</title>
+</head>
+
+<body>
+  <div class="full-screen-container">
+    <div class="login-container">
+    <h3 class="login-title">Welcome to Log In</h3>
+    <hr class="solid">
+      <form action="/user/login" method="POST">
+
+        <div class="input-group">
+          <label>Email : </label>
+          <input id="email" type="email" name="email" required>
+        </div>
+        <% if(locals.err_msg) { %>
+          <div class="input-group errormessage"><%= err_msg %></div>
+          <% } %>          
+        
+        <div class="input-group">
+          <label>Password : </label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <% if(locals.err_password) { %>
+          <div class="input-group errormessage"><%= err_password %></div>
+          <% } %>          
+
+        <button type="submit" data-tooltip-loginbutton="Click here to Login" class="login-button">Log In</button>
+      </form>
+
+      <div class="href-tags">
+        <a href="/user/forgotPass" class="href-tag-1" data-tooltip-tag1 ="Click here to set New Password">Forgot Password ?</a>
+        <a href="/user/signup" class="href-tag-2" data-tooltip-tag2 ="Click here to Register Yourself">New User?</a>
+      </div>
+      
+      <div class="link-tags">
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      </div>
+    </div>
+    
+  </div>
+</body>
+
+</html>

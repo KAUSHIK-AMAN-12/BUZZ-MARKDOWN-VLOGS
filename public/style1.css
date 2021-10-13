@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand' , sans-serif;
+}
+
+body , html{
+    margin : 0;
+}
+
+.full-screen-container{
+    background-image: url("../images/beautiful-evening-purple-sunset-4k-vt.jpg");
+    height: 100vh;
+    width : 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.login-container{
+    background-color: black;
+    padding : 0.3% 30px;            /* top-bottom , left-right */
+   
+    min-width : 400px;
+    width : 40%;
+    max-width: 600px;
+    box-shadow: 5px 5px 10px ;
+    border-radius: 6px; 
+}
+
+.login-title{
+    color : white;
+    font-weight: normal;
+    font-size: 1.5em;
+    padding-top : 0px;
+    margin-bottom : 10px;
+    text-align: center;
+}
+
+.login-container hr{
+        border-top: 0.01px solid white;
+        margin-bottom: 30px;
+}
+
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6px;
+}
+.errormessage{
+    color : red;
+    text-align : center;
+    
+}
+
+.input-group input{
+    width : 100%;
+    padding : 0.5em .25em;
+    background-color : hsla(201,100% , 100%  ,0.1) ; 
+    border : 1px solid hsl(201,100%,8%) ; 
+    border-radius: 4px;
+    outline : none ; 
+    color : white;
+    font-weight: normal;
+}
+
+.input-group label{
+    color : white;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.5em;
+
+}
+
+.input-group input:hover{
+    background-color: hsla(20 ,10% , 30% , 40%);
+}
+
+.input-group input:focus{
+    border : 1px solid hsl(201 , 100% , 50%);
+}
+
+.login-button, .search-button{
+    background-color: hsla(1, 100%, 5%, 70%);
+    width : 100%;
+    margin-top: 20px;
+    padding : 2px 30px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: normal;
+    cursor : pointer;
+    border : 3px solid hsla(24,100% , 80%);
+    color : white;
+}
+
+
+
+.login-button:hover,
+.search-button:hover {
+    background-color: hsla(24,100%,50%,0.8);
+}
+
+
+
+.link-tags
+    {
+        margin-top: 20px;
+        display:flex;
+        justify-content: center;
+        /* align-items: center; */
+        padding: 10px;
+    }
+
+    .fa {
+        padding: 10px;
+        font-size: 20px;
+        width: 46px;
+        text-align: center;
+        text-decoration: none;
+        margin-top : 10px;
+        margin-left : 4%;
+        border-radius: 50%;
+      }
+      
+      .fa:hover {
+          opacity: 0.7;
+      }
+
+      
+.fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+.href-tags{
+    margin-top: 1%;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
+.href-tags a{
+    color : white;
+    font-weight: normal;
+    margin-top: 5px;
+    font-size: large;
+    text-decoration: none;
+}
+.href-tags a:hover{
+    color : red;
+
+}
+
+.search-container-forgotPass
+{
+    background-color: hsla(1,10%,10%,0.9);
+    padding : 2% 30px;            /* top-bottom , left-right */
+    
+    min-width : 400px;
+    width : 40%;
+    max-width: 600px;
+    box-shadow: 5px 5px 10px ;
+    border-radius: 6px; 
+}

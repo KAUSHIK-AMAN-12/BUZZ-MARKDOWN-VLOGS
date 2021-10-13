@@ -1,0 +1,75 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+  <link href="../public/style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body style=" padding : 0;
+    margin : 0;
+    display : flex ; 
+    width : 100vw;
+    height : 100vh;
+    justify-content: center;
+    align-items: center; 
+    background-color: hsl(var(--hue) , 100% , 20%);">
+
+    <div style="padding : 30px;">
+
+    <form action="/forgetpassword/updatepass?_method=PUT" method="POST">  ?_method=PUT/DELETE -->
+                                                         <!--PUT is an http for update something-->
+
+     <!-- <label for="setnewpassword">New Password : </label>
+     <input id="setnewpassword" type="password" name="setnewpassword">
+     <br>
+     <button type="submit">Set-Password</button>
+    </form>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../public/style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:100,300,500">
+  <link rel="stylesheet" href="../public/tooltip-style.css">
+  <title>Forgot Password ?</title>
+</head>
+
+<body>
+
+  <div class="full-screen-container">
+    <div class="search-container-forgotPass">
+    <h3 class="login-title">SetNewPassword Page</h3>
+    <hr class="solid">
+      <form action="/user/forgetpassword/updatepass?_method=PUT" method="POST">
+
+        <div class="input-group">
+          <label>New Password : </label>
+          <input id="setnewpassword" type="password" name="setnewpassword" required>
+        </div>
+
+        <button type="submit" data-tooltip-searchbutton="Click here to Set this new Password and login again"
+         class="search-button">Set Password</button>
+      </form>
+    </div>
+    
+  </div>
+</body>
+
+</html>
+
+
+
+

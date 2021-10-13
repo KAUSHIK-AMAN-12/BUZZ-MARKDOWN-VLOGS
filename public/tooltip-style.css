@@ -1,0 +1,261 @@
+.href-tag-1 {
+    position : relative;
+    margin-top: 10px;
+}
+.href-tag-1::before,
+.href-tag-1::after{
+    --scale : 0;
+    --tooltip-color : #333;
+    --arrow-size : 10px;
+
+
+    position: absolute;
+    /* content : ''; */
+    top : -.25rem; 
+    left : 50%; 
+    /* width : 50px; */
+    /* height : 50px;
+    background : black; */
+    transform : translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    transition : 150ms transform;
+    transform-origin: bottom center;
+}
+
+/* width : max content will adjust the size of the content according to text size */
+.href-tag-1::before{
+   --translate-y : calc(-100% - var(--arrow-size));
+
+    content: attr(data-tooltip-tag1);
+    color : white;
+   padding : .5rem;
+   border-radius: .3rem;
+   text-align: center;
+   width : max-content;
+   max-width: 100%;
+    background : var(--tooltip-color);
+}
+
+.href-tag-1:hover::before,
+.href-tag-1:hover::after{
+--scale : 1;
+}
+
+.href-tag-1::after{
+    --translate-y : calc(-1 * var(--arrow-size));
+content : ' ' ;
+border : var(--arrow-size) solid transparent;
+border-top-color: var(--tooltip-color);
+transform-origin: top center;
+}
+
+/*------------- FOR href-tag-2  --------------------------------- */
+
+.href-tag-2 {
+    position : relative;
+    margin-top: 10px;
+}
+.href-tag-2::before,
+.href-tag-2::after{
+    --scale : 0;
+    --tooltip-color : #333;
+    --arrow-size : 10px;
+
+
+    position: absolute;
+    /* content : ''; */
+    top : -.25rem; 
+    left : 50%; 
+    /* width : 50px; */
+    /* height : 50px;
+    background : black; */
+    transform : translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    transition : 150ms transform;
+    transform-origin: bottom center;
+}
+
+/* width : max content will adjust the size of the content according to text size */
+.href-tag-2::before{
+   --translate-y : calc(-100% - var(--arrow-size));
+
+    content: attr(data-tooltip-tag2);
+
+    color : white;
+   padding : .5rem;
+   border-radius: .3rem;
+   text-align: center;
+   width : max-content;
+   max-width: 100%;
+    background : var(--tooltip-color);
+}
+
+.href-tag-2:hover::before,
+.href-tag-2:hover::after{
+--scale : 1;
+}
+
+.href-tag-2::after{
+    --translate-y : calc(-1 * var(--arrow-size));
+content : ' ' ;
+border : var(--arrow-size) solid transparent;
+border-top-color: var(--tooltip-color);
+transform-origin: top center;
+}
+
+/* login-buttin tooltip */
+
+
+.login-button {
+    position : relative;
+    
+}
+.login-button::before,
+.login-button::after{
+    --scale : 0;
+    --tooltip-color : #333;
+    --arrow-size : 10px;
+
+
+    position: absolute;
+    /* content : ''; */
+    top : -.25rem; 
+    left : 50%; 
+    /* width : 50px; */
+    /* height : 50px;
+    background : black; */
+    transform : translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    transition : 150ms transform;
+    transform-origin: bottom center;
+}
+
+/* width : max content will adjust the size of the content according to text size */
+.login-button::before{
+   --translate-y : calc(-100% - var(--arrow-size));
+
+    content: attr(data-tooltip-loginbutton);
+
+    color : white;
+   padding : .5rem;
+   border-radius: .3rem;
+   text-align: center;
+   width : max-content;
+   max-width: 100%;
+    background : var(--tooltip-color);
+}
+
+.login-button:hover::before,
+.login-button:hover::after{
+--scale : 1;
+}
+
+.login-button::after{
+    --translate-y : calc(-1 * var(--arrow-size));
+content : ' ' ;
+border : var(--arrow-size) solid transparent;
+border-top-color: var(--tooltip-color);
+transform-origin: top center;
+}
+
+/* ----------------     for search email       ---------- */
+
+.search-button {
+    position : relative;
+    
+}
+.search-button::before,
+.search-button::after{
+    --scale : 0;
+    --tooltip-color : #333;
+    --arrow-size : 10px;
+
+
+    position: absolute;
+    /* content : ''; */
+    top : -.25rem; 
+    left : 50%; 
+    /* width : 50px; */
+    /* height : 50px;
+    background : black; */
+    transform : translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    transition : 150ms transform;
+    transform-origin: bottom center;
+}
+
+/* width : max content will adjust the size of the content according to text size */
+.search-button::before{
+   --translate-y : calc(-100% - var(--arrow-size));
+
+    content: attr(data-tooltip-searchbutton);
+
+    color : white;
+   padding : .5rem;
+   border-radius: .3rem;
+   text-align: center;
+   width : max-content;
+   max-width: 100%;
+    background : var(--tooltip-color);
+}
+
+.search-button:hover::before,
+.search-button:hover::after{
+--scale : 1;
+}
+
+.search-button::after{
+    --translate-y : calc(-1 * var(--arrow-size));
+content : ' ' ;
+border : var(--arrow-size) solid transparent;
+border-top-color: var(--tooltip-color);
+transform-origin: top center;
+}
+
+/* ------------------------ signup --------------------- */
+
+.signup {
+    position : relative;
+    
+}
+.signup::before,
+.signup::after{
+    --scale : 0;
+    --tooltip-color : #333;
+    --arrow-size : 10px;
+
+
+    position: absolute;
+    /* content : ''; */
+    top : -.25rem; 
+    left : 50%; 
+    /* width : 50px; */
+    /* height : 50px;
+    background : black; */
+    transform : translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    transition : 150ms transform;
+    transform-origin: bottom center;
+}
+.signup::before{
+    --translate-y : calc(-100% - var(--arrow-size));
+ 
+     content: attr(data-tooltip-signup);
+ 
+     color : white;
+    padding : .5rem;
+    border-radius: .3rem;
+    text-align: center;
+    width : max-content;
+    max-width: 100%;
+     background : var(--tooltip-color);
+ }
+ 
+ .signup:hover::before,
+ .signup:hover::after{
+ --scale : 1;
+ }
+ 
+ .signup::after{
+     --translate-y : calc(-1 * var(--arrow-size));
+ content : ' ' ;
+ border : var(--arrow-size) solid transparent;
+ border-top-color: var(--tooltip-color);
+ transform-origin: top center;
+ }
+ 

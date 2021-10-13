@@ -1,0 +1,18 @@
+### for finding emaild by searchemail
+POST http://localhost:3457/searchemail
+Content-Type: application/json 
+
+{
+     "email" : "aman@gmail.com"
+}
+
+###  for all users  614b97f003b2b60640e6d705
+GET http://localhost:5000/user/allusers
+
+### update password
+PATCH  http://localhost:3457/forgetpassword/updatepass
+Content-Type: application/json 
+
+{
+    "setnewpassword" : "2345"
+}
