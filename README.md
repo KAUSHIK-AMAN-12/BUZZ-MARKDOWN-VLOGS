@@ -17,8 +17,10 @@
 
 ![Screenshot (9)](https://user-images.githubusercontent.com/61931894/138604517-faca88b4-4f93-4a65-91d9-ebee6e435dee.png)
 
+3.a This is the Main Articles/Posts page where we can see all posts , edit the post , Delete the post.
 
 ![Screenshot (11)](https://user-images.githubusercontent.com/61931894/138604538-29722ae3-030b-4bec-a3b5-1926294f0107.png)
+
 
 
 ![Screenshot (12)](https://user-images.githubusercontent.com/61931894/138604546-3b6f0897-bff3-4fd7-8668-a3a60d68b9d9.png)
