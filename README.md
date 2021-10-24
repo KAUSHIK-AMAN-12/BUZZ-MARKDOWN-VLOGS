@@ -6,9 +6,13 @@
 ![Screenshot (5)](https://user-images.githubusercontent.com/61931894/138604501-7d19ddcf-0c1f-4369-82d8-ed36660f1f1a.png)
 
 
-
 ![Screenshot (6)](https://user-images.githubusercontent.com/61931894/138604513-2d39d20a-e922-442d-b436-0cbb17815b7b.png)
 
+
+2.a This is the User-Profile page we see our all user details.
+2.b We can also edit or update the user Info.
+2.c it sometimes don't work bcoz of some bug but i'll fix it very soon.
+2.d There is a Navbar above where Buttons are available.
 
 
 ![Screenshot (9)](https://user-images.githubusercontent.com/61931894/138604517-faca88b4-4f93-4a65-91d9-ebee6e435dee.png)
