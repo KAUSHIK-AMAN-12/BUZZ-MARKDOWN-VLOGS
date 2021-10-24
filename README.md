@@ -1,4 +1,10 @@
 # BUZZ-MARKDOWN-VLOGS
+The technologies and framework i used in this project -> 
+Frontend -> HTML , EJS Handlebars , Bootstrap , CSS
+Backend  -> Node js, Express js , MongoDB .
+Libs -> Mongoose , Express, Method_Override , Bcrypt , SLugify , Dotenv , Nodemon , dompurify .
+
+//------------------------------------------------------------------------------------------------------------//
 1. This is the Login Page of our website.
 1.a Registered User can Login from here or if they forget the password ,they can set a new password.
 1.b Here tooltips tags are here to guide whatt to do.
@@ -15,13 +21,17 @@
 2.d There is a Navbar above where Buttons are available.
 
 
-![Screenshot (9)](https://user-images.githubusercontent.com/61931894/138604517-faca88b4-4f93-4a65-91d9-ebee6e435dee.png)
+![Screenshot (9)](https://user-images.githubusercontent.com/61931894/138604517-faca88b4-4f93-4a65-91d9-ebee6e435dee.png
 
-3.a This is the Main Articles/Posts page where we can see all posts , edit the post , Delete the post.
+3.a This is the Sign-UP Page for New User.
+
+![Screenshot (16)](https://user-images.githubusercontent.com/61931894/138605846-b48faa8a-821f-43bc-9481-ceb493486d03.png)
+
+4.a This is the Main Articles/Posts page where we can see all posts , edit the post , Delete the post.
 
 ![Screenshot (11)](https://user-images.githubusercontent.com/61931894/138604538-29722ae3-030b-4bec-a3b5-1926294f0107.png)
 
-
+5.a This is the page for writing a new Vlog/Post.
 
 ![Screenshot (12)](https://user-images.githubusercontent.com/61931894/138604546-3b6f0897-bff3-4fd7-8668-a3a60d68b9d9.png)
 
